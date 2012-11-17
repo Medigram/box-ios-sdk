@@ -1,4 +1,4 @@
-THIS SDK IS DEPRECATED: The latest is available here: https://cloud.box.com/s/4atlh8kda0fialhrr7e8
+THIS SDK IS DEPRECATED: The latest is available here: http://developers.box.com/onecloud
 ---------------
 
 
