@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4832D19415B4E56200A1370B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4832D19315B4E56200A1370B /* libz.dylib */; };
+		613CFCE51558707200687173 /* BoxSelectToDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CFCE41558707100687173 /* BoxSelectToDownloadViewController.m */; };
+		613CFCEB155870C400687173 /* BoxDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 613CFCE9155870C300687173 /* BoxDownloadViewController.m */; };
+		613CFCEE155870C400687173 /* BoxDownloadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 613CFCEA155870C300687173 /* BoxDownloadViewController.xib */; };
+		61B13D131546113300CE5ED2 /* TestImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 61B13D101546113300CE5ED2 /* TestImage.gif */; };
+		61B13D151546113300CE5ED2 /* TestTextDocument.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 61B13D111546113300CE5ED2 /* TestTextDocument.rtf */; };
+		61B13D171546113300CE5ED2 /* TestWordDocument.docx in Resources */ = {isa = PBXBuildFile; fileRef = 61B13D121546113300CE5ED2 /* TestWordDocument.docx */; };
+		61D2911A1537782F00D58CED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D291191537782F00D58CED /* UIKit.framework */; };
+		61D2911C1537782F00D58CED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D2911B1537782F00D58CED /* Foundation.framework */; };
+		61D2911E1537782F00D58CED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D2911D1537782F00D58CED /* CoreGraphics.framework */; };
+		61D291241537782F00D58CED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61D291221537782F00D58CED /* InfoPlist.strings */; };
+		61D291261537782F00D58CED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D291251537782F00D58CED /* main.m */; };
+		61D2912A1537782F00D58CED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D291291537782F00D58CED /* AppDelegate.m */; };
+		61D46F61153CF31400A8ED68 /* BoxActionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F3A153CF31400A8ED68 /* BoxActionTableViewController.m */; };
+		61D46F63153CF31400A8ED68 /* BoxAddCommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F3C153CF31400A8ED68 /* BoxAddCommentsViewController.m */; };
+		61D46F65153CF31400A8ED68 /* BoxAddCommentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D46F3D153CF31400A8ED68 /* BoxAddCommentsViewController.xib */; };
+		61D46F67153CF31400A8ED68 /* BoxAddCommentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F3F153CF31400A8ED68 /* BoxAddCommentTableViewController.m */; };
+		61D46F69153CF31400A8ED68 /* BoxCreateFolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F41153CF31400A8ED68 /* BoxCreateFolderViewController.m */; };
+		61D46F6B153CF31400A8ED68 /* BoxCreateFolderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D46F42153CF31400A8ED68 /* BoxCreateFolderViewController.xib */; };
+		61D46F6D153CF31400A8ED68 /* BoxDeleteActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F44153CF31400A8ED68 /* BoxDeleteActionViewController.m */; };
+		61D46F6F153CF31400A8ED68 /* BoxGetDeleteCommentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F46153CF31400A8ED68 /* BoxGetDeleteCommentTableViewController.m */; };
+		61D46F71153CF31400A8ED68 /* BoxGetUpdatesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F48153CF31400A8ED68 /* BoxGetUpdatesTableViewController.m */; };
+		61D46F75153CF31400A8ED68 /* BoxRenameFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F4C153CF31400A8ED68 /* BoxRenameFileViewController.m */; };
+		61D46F77153CF31400A8ED68 /* BoxRenameFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D46F4D153CF31400A8ED68 /* BoxRenameFileViewController.xib */; };
+		61D46F79153CF31400A8ED68 /* BoxSelectToDeleteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F4F153CF31400A8ED68 /* BoxSelectToDeleteTableViewController.m */; };
+		61D46F7D153CF31400A8ED68 /* BoxSelectToPubShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F53153CF31400A8ED68 /* BoxSelectToPubShareViewController.m */; };
+		61D46F7F153CF31400A8ED68 /* BoxSelectToRenameTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F55153CF31400A8ED68 /* BoxSelectToRenameTableViewController.m */; };
+		61D46F81153CF31400A8ED68 /* BoxShareActionInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D46F56153CF31400A8ED68 /* BoxShareActionInputController.xib */; };
+		61D46F83153CF31400A8ED68 /* BoxShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F58153CF31400A8ED68 /* BoxShareViewController.m */; };
+		61D46F85153CF31400A8ED68 /* BoxShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D46F59153CF31400A8ED68 /* BoxShareViewController.xib */; };
+		61D46F87153CF31400A8ED68 /* BoxUploadActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F5B153CF31400A8ED68 /* BoxUploadActionViewController.m */; };
+		61D46F89153CF31400A8ED68 /* BoxUploadActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D46F5C153CF31400A8ED68 /* BoxUploadActionViewController.xib */; };
+		61D46F8B153CF31400A8ED68 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F5E153CF31400A8ED68 /* MainViewController.m */; };
+		61D46F8D153CF31400A8ED68 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D46F5F153CF31400A8ED68 /* MainViewController.xib */; };
+		61D46F8F153CF31400A8ED68 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D46F60153CF31400A8ED68 /* MainWindow.xib */; };
+		61D46F93153CF35200A8ED68 /* BoxBrowserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D46F92153CF35100A8ED68 /* BoxBrowserTableViewController.m */; };
+		E146EBF316C474110013D459 /* BoxLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E146EBF216C474110013D459 /* BoxLoginViewController.m */; };
+		E15D33B61614E753005F207B /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15D33B51614E753005F207B /* Box.framework */; };
+		E1A0BB2C1607BF6F0063949C /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 614A54B9153CDCEB00ABF272 /* AssetsLibrary.framework */; };
+		E1A0BB2D1607BF790063949C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D2920E1537880800D58CED /* Security.framework */; };
+		E1A0BB2F1607BF7F0063949C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A0BB2E1607BF7F0063949C /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4832D19315B4E56200A1370B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		613CFCE31558707100687173 /* BoxSelectToDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxSelectToDownloadViewController.h; sourceTree = "<group>"; };
+		613CFCE41558707100687173 /* BoxSelectToDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSelectToDownloadViewController.m; sourceTree = "<group>"; };
+		613CFCE8155870C300687173 /* BoxDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxDownloadViewController.h; sourceTree = "<group>"; };
+		613CFCE9155870C300687173 /* BoxDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxDownloadViewController.m; sourceTree = "<group>"; };
+		613CFCEA155870C300687173 /* BoxDownloadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoxDownloadViewController.xib; sourceTree = "<group>"; };
+		614A54B9153CDCEB00ABF272 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		61B13CF31546081800CE5ED2 /* BoxSelectToPubShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxSelectToPubShareViewController.h; sourceTree = "<group>"; };
+		61B13D101546113300CE5ED2 /* TestImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TestImage.gif; sourceTree = "<group>"; };
+		61B13D111546113300CE5ED2 /* TestTextDocument.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = TestTextDocument.rtf; sourceTree = "<group>"; };
+		61B13D121546113300CE5ED2 /* TestWordDocument.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = TestWordDocument.docx; sourceTree = "<group>"; };
+		61D291151537782F00D58CED /* BoxSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61D291191537782F00D58CED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		61D2911B1537782F00D58CED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		61D2911D1537782F00D58CED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		61D291211537782F00D58CED /* BoxSDK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BoxSDK-Info.plist"; sourceTree = "<group>"; };
+		61D291231537782F00D58CED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		61D291251537782F00D58CED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		61D291271537782F00D58CED /* BoxSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BoxSDK-Prefix.pch"; sourceTree = "<group>"; };
+		61D291281537782F00D58CED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		61D291291537782F00D58CED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		61D291311537783000D58CED /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		61D2920E1537880800D58CED /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		61D46F39153CF31400A8ED68 /* BoxActionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxActionTableViewController.h; sourceTree = "<group>"; };
+		61D46F3A153CF31400A8ED68 /* BoxActionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxActionTableViewController.m; sourceTree = "<group>"; };
+		61D46F3B153CF31400A8ED68 /* BoxAddCommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxAddCommentsViewController.h; sourceTree = "<group>"; };
+		61D46F3C153CF31400A8ED68 /* BoxAddCommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxAddCommentsViewController.m; sourceTree = "<group>"; };
+		61D46F3D153CF31400A8ED68 /* BoxAddCommentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoxAddCommentsViewController.xib; sourceTree = "<group>"; };
+		61D46F3E153CF31400A8ED68 /* BoxAddCommentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxAddCommentTableViewController.h; sourceTree = "<group>"; };
+		61D46F3F153CF31400A8ED68 /* BoxAddCommentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxAddCommentTableViewController.m; sourceTree = "<group>"; };
+		61D46F40153CF31400A8ED68 /* BoxCreateFolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxCreateFolderViewController.h; sourceTree = "<group>"; };
+		61D46F41153CF31400A8ED68 /* BoxCreateFolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxCreateFolderViewController.m; sourceTree = "<group>"; };
+		61D46F42153CF31400A8ED68 /* BoxCreateFolderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoxCreateFolderViewController.xib; sourceTree = "<group>"; };
+		61D46F43153CF31400A8ED68 /* BoxDeleteActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxDeleteActionViewController.h; sourceTree = "<group>"; };
+		61D46F44153CF31400A8ED68 /* BoxDeleteActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxDeleteActionViewController.m; sourceTree = "<group>"; };
+		61D46F45153CF31400A8ED68 /* BoxGetDeleteCommentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxGetDeleteCommentTableViewController.h; sourceTree = "<group>"; };
+		61D46F46153CF31400A8ED68 /* BoxGetDeleteCommentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxGetDeleteCommentTableViewController.m; sourceTree = "<group>"; };
+		61D46F47153CF31400A8ED68 /* BoxGetUpdatesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxGetUpdatesTableViewController.h; sourceTree = "<group>"; };
+		61D46F48153CF31400A8ED68 /* BoxGetUpdatesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxGetUpdatesTableViewController.m; sourceTree = "<group>"; };
+		61D46F4B153CF31400A8ED68 /* BoxRenameFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxRenameFileViewController.h; sourceTree = "<group>"; };
+		61D46F4C153CF31400A8ED68 /* BoxRenameFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxRenameFileViewController.m; sourceTree = "<group>"; };
+		61D46F4D153CF31400A8ED68 /* BoxRenameFileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoxRenameFileViewController.xib; sourceTree = "<group>"; };
+		61D46F4E153CF31400A8ED68 /* BoxSelectToDeleteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxSelectToDeleteTableViewController.h; sourceTree = "<group>"; };
+		61D46F4F153CF31400A8ED68 /* BoxSelectToDeleteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSelectToDeleteTableViewController.m; sourceTree = "<group>"; };
+		61D46F53153CF31400A8ED68 /* BoxSelectToPubShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSelectToPubShareViewController.m; sourceTree = "<group>"; };
+		61D46F54153CF31400A8ED68 /* BoxSelectToRenameTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxSelectToRenameTableViewController.h; sourceTree = "<group>"; };
+		61D46F55153CF31400A8ED68 /* BoxSelectToRenameTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxSelectToRenameTableViewController.m; sourceTree = "<group>"; };
+		61D46F56153CF31400A8ED68 /* BoxShareActionInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoxShareActionInputController.xib; sourceTree = "<group>"; };
+		61D46F57153CF31400A8ED68 /* BoxShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxShareViewController.h; sourceTree = "<group>"; };
+		61D46F58153CF31400A8ED68 /* BoxShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxShareViewController.m; sourceTree = "<group>"; };
+		61D46F59153CF31400A8ED68 /* BoxShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoxShareViewController.xib; sourceTree = "<group>"; };
+		61D46F5A153CF31400A8ED68 /* BoxUploadActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxUploadActionViewController.h; sourceTree = "<group>"; };
+		61D46F5B153CF31400A8ED68 /* BoxUploadActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxUploadActionViewController.m; sourceTree = "<group>"; };
+		61D46F5C153CF31400A8ED68 /* BoxUploadActionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BoxUploadActionViewController.xib; sourceTree = "<group>"; };
+		61D46F5D153CF31400A8ED68 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		61D46F5E153CF31400A8ED68 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		61D46F5F153CF31400A8ED68 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		61D46F60153CF31400A8ED68 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		61D46F91153CF35100A8ED68 /* BoxBrowserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxBrowserTableViewController.h; sourceTree = "<group>"; };
+		61D46F92153CF35100A8ED68 /* BoxBrowserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoxBrowserTableViewController.m; sourceTree = "<group>"; };
+		E146EBF116C474110013D459 /* BoxLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BoxLoginViewController.h; path = BoxSDK/BoxLoginViewController.h; sourceTree = SOURCE_ROOT; };
+		E146EBF216C474110013D459 /* BoxLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoxLoginViewController.m; path = BoxSDK/BoxLoginViewController.m; sourceTree = SOURCE_ROOT; };
+		E15D33A41614D1EE005F207B /* BoxCoreDataStore 2.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "BoxCoreDataStore 2.mom"; sourceTree = "<group>"; };
+		E15D33A51614D1EE005F207B /* BoxCoreDataStore 3.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "BoxCoreDataStore 3.mom"; sourceTree = "<group>"; };
+		E15D33A61614D1EE005F207B /* BoxCoreDataStore 4.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "BoxCoreDataStore 4.mom"; sourceTree = "<group>"; };
+		E15D33A71614D1EE005F207B /* BoxCoreDataStore 5.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "BoxCoreDataStore 5.mom"; sourceTree = "<group>"; };
+		E15D33A81614D1EE005F207B /* BoxCoreDataStore 6.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "BoxCoreDataStore 6.mom"; sourceTree = "<group>"; };
+		E15D33A91614D1EE005F207B /* BoxCoreDataStore 7.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "BoxCoreDataStore 7.mom"; sourceTree = "<group>"; };
+		E15D33AA1614D1EE005F207B /* BoxCoreDataStore 8.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "BoxCoreDataStore 8.mom"; sourceTree = "<group>"; };
+		E15D33AB1614D1EE005F207B /* BoxCoreDataStore 9.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "BoxCoreDataStore 9.mom"; sourceTree = "<group>"; };
+		E15D33AC1614D1EE005F207B /* BoxCoreDataStore 9.omo */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BoxCoreDataStore 9.omo"; sourceTree = "<group>"; };
+		E15D33AD1614D1EE005F207B /* BoxCoreDataStore.mom */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = BoxCoreDataStore.mom; sourceTree = "<group>"; };
+		E15D33AE1614D1EE005F207B /* VersionInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = VersionInfo.plist; sourceTree = "<group>"; };
+		E15D33B51614E753005F207B /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Box.framework; sourceTree = "<group>"; };
+		E1A0BB2E1607BF7F0063949C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61D291121537782F00D58CED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1A0BB2F1607BF7F0063949C /* CoreData.framework in Frameworks */,
+				E1A0BB2D1607BF790063949C /* Security.framework in Frameworks */,
+				E1A0BB2C1607BF6F0063949C /* AssetsLibrary.framework in Frameworks */,
+				4832D19415B4E56200A1370B /* libz.dylib in Frameworks */,
+				61D2911A1537782F00D58CED /* UIKit.framework in Frameworks */,
+				61D2911C1537782F00D58CED /* Foundation.framework in Frameworks */,
+				61D2911E1537782F00D58CED /* CoreGraphics.framework in Frameworks */,
+				E15D33B61614E753005F207B /* Box.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61546D6D153F3FAD0026DB7D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				613CFCEA155870C300687173 /* BoxDownloadViewController.xib */,
+				61D46F3D153CF31400A8ED68 /* BoxAddCommentsViewController.xib */,
+				61D46F42153CF31400A8ED68 /* BoxCreateFolderViewController.xib */,
+				61D46F4D153CF31400A8ED68 /* BoxRenameFileViewController.xib */,
+				61D46F56153CF31400A8ED68 /* BoxShareActionInputController.xib */,
+				61D46F59153CF31400A8ED68 /* BoxShareViewController.xib */,
+				61D46F5C153CF31400A8ED68 /* BoxUploadActionViewController.xib */,
+				61D46F5F153CF31400A8ED68 /* MainViewController.xib */,
+				61D46F60153CF31400A8ED68 /* MainWindow.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		61546D6E153F3FDE0026DB7D /* Action View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				61D46F39153CF31400A8ED68 /* BoxActionTableViewController.h */,
+				61D46F3A153CF31400A8ED68 /* BoxActionTableViewController.m */,
+				613CFCE31558707100687173 /* BoxSelectToDownloadViewController.h */,
+				613CFCE41558707100687173 /* BoxSelectToDownloadViewController.m */,
+				613CFCE8155870C300687173 /* BoxDownloadViewController.h */,
+				613CFCE9155870C300687173 /* BoxDownloadViewController.m */,
+				61D46F3B153CF31400A8ED68 /* BoxAddCommentsViewController.h */,
+				61D46F3C153CF31400A8ED68 /* BoxAddCommentsViewController.m */,
+				61D46F3E153CF31400A8ED68 /* BoxAddCommentTableViewController.h */,
+				61D46F3F153CF31400A8ED68 /* BoxAddCommentTableViewController.m */,
+				61D46F40153CF31400A8ED68 /* BoxCreateFolderViewController.h */,
+				61D46F41153CF31400A8ED68 /* BoxCreateFolderViewController.m */,
+				61D46F43153CF31400A8ED68 /* BoxDeleteActionViewController.h */,
+				61D46F44153CF31400A8ED68 /* BoxDeleteActionViewController.m */,
+				61D46F45153CF31400A8ED68 /* BoxGetDeleteCommentTableViewController.h */,
+				61D46F46153CF31400A8ED68 /* BoxGetDeleteCommentTableViewController.m */,
+				61D46F47153CF31400A8ED68 /* BoxGetUpdatesTableViewController.h */,
+				61D46F48153CF31400A8ED68 /* BoxGetUpdatesTableViewController.m */,
+				61D46F4B153CF31400A8ED68 /* BoxRenameFileViewController.h */,
+				61D46F4C153CF31400A8ED68 /* BoxRenameFileViewController.m */,
+				61D46F4E153CF31400A8ED68 /* BoxSelectToDeleteTableViewController.h */,
+				61D46F4F153CF31400A8ED68 /* BoxSelectToDeleteTableViewController.m */,
+				61B13CF31546081800CE5ED2 /* BoxSelectToPubShareViewController.h */,
+				61D46F53153CF31400A8ED68 /* BoxSelectToPubShareViewController.m */,
+				61D46F54153CF31400A8ED68 /* BoxSelectToRenameTableViewController.h */,
+				61D46F55153CF31400A8ED68 /* BoxSelectToRenameTableViewController.m */,
+				61D46F57153CF31400A8ED68 /* BoxShareViewController.h */,
+				61D46F58153CF31400A8ED68 /* BoxShareViewController.m */,
+				61D46F5A153CF31400A8ED68 /* BoxUploadActionViewController.h */,
+				61D46F5B153CF31400A8ED68 /* BoxUploadActionViewController.m */,
+			);
+			name = "Action View Controllers";
+			sourceTree = "<group>";
+		};
+		61B13D0E1546110500CE5ED2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				61B13D101546113300CE5ED2 /* TestImage.gif */,
+				61B13D111546113300CE5ED2 /* TestTextDocument.rtf */,
+				61B13D121546113300CE5ED2 /* TestWordDocument.docx */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		61D2910A1537782F00D58CED = {
+			isa = PBXGroup;
+			children = (
+				E15D33A31614D1EE005F207B /* BoxCoreDataStore.momd */,
+				61D2911F1537782F00D58CED /* BoxSDK */,
+				61D291181537782F00D58CED /* Frameworks */,
+				61D291161537782F00D58CED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61D291161537782F00D58CED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61D291151537782F00D58CED /* BoxSDK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61D291181537782F00D58CED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15D33B51614E753005F207B /* Box.framework */,
+				4832D19315B4E56200A1370B /* libz.dylib */,
+				614A54B9153CDCEB00ABF272 /* AssetsLibrary.framework */,
+				61D2920E1537880800D58CED /* Security.framework */,
+				E1A0BB2E1607BF7F0063949C /* CoreData.framework */,
+				61D291191537782F00D58CED /* UIKit.framework */,
+				61D2911B1537782F00D58CED /* Foundation.framework */,
+				61D2911D1537782F00D58CED /* CoreGraphics.framework */,
+				61D291311537783000D58CED /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61D2911F1537782F00D58CED /* BoxSDK */ = {
+			isa = PBXGroup;
+			children = (
+				61D46F38153CF31300A8ED68 /* SampleApp */,
+				61D291641537787700D58CED /* SDK */,
+				61D291281537782F00D58CED /* AppDelegate.h */,
+				61D291291537782F00D58CED /* AppDelegate.m */,
+				61D291201537782F00D58CED /* Supporting Files */,
+			);
+			path = BoxSDK;
+			sourceTree = "<group>";
+		};
+		61D291201537782F00D58CED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61D291211537782F00D58CED /* BoxSDK-Info.plist */,
+				61D291221537782F00D58CED /* InfoPlist.strings */,
+				61D291251537782F00D58CED /* main.m */,
+				61D291271537782F00D58CED /* BoxSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61D291641537787700D58CED /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				61D46F91153CF35100A8ED68 /* BoxBrowserTableViewController.h */,
+				61D46F92153CF35100A8ED68 /* BoxBrowserTableViewController.m */,
+			);
+			name = SDK;
+			sourceTree = "<group>";
+		};
+		61D46F38153CF31300A8ED68 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				61D46F5D153CF31400A8ED68 /* MainViewController.h */,
+				61D46F5E153CF31400A8ED68 /* MainViewController.m */,
+				E146EBF116C474110013D459 /* BoxLoginViewController.h */,
+				E146EBF216C474110013D459 /* BoxLoginViewController.m */,
+				61546D6E153F3FDE0026DB7D /* Action View Controllers */,
+				61546D6D153F3FAD0026DB7D /* Views */,
+				61B13D0E1546110500CE5ED2 /* Resources */,
+			);
+			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		E15D33A31614D1EE005F207B /* BoxCoreDataStore.momd */ = {
+			isa = PBXGroup;
+			children = (
+				E15D33A41614D1EE005F207B /* BoxCoreDataStore 2.mom */,
+				E15D33A51614D1EE005F207B /* BoxCoreDataStore 3.mom */,
+				E15D33A61614D1EE005F207B /* BoxCoreDataStore 4.mom */,
+				E15D33A71614D1EE005F207B /* BoxCoreDataStore 5.mom */,
+				E15D33A81614D1EE005F207B /* BoxCoreDataStore 6.mom */,
+				E15D33A91614D1EE005F207B /* BoxCoreDataStore 7.mom */,
+				E15D33AA1614D1EE005F207B /* BoxCoreDataStore 8.mom */,
+				E15D33AB1614D1EE005F207B /* BoxCoreDataStore 9.mom */,
+				E15D33AC1614D1EE005F207B /* BoxCoreDataStore 9.omo */,
+				E15D33AD1614D1EE005F207B /* BoxCoreDataStore.mom */,
+				E15D33AE1614D1EE005F207B /* VersionInfo.plist */,
+			);
+			name = BoxCoreDataStore.momd;
+			path = Box.framework/Resources/BoxCoreDataStore.momd;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61D291141537782F00D58CED /* BoxSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61D291421537783000D58CED /* Build configuration list for PBXNativeTarget "BoxSDK" */;
+			buildPhases = (
+				61D291111537782F00D58CED /* Sources */,
+				61D291121537782F00D58CED /* Frameworks */,
+				61D291131537782F00D58CED /* Resources */,
+				E15D33C41614E7BD005F207B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BoxSDK;
+			productName = BoxSDK;
+			productReference = 61D291151537782F00D58CED /* BoxSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61D2910C1537782F00D58CED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 61D2910F1537782F00D58CED /* Build configuration list for PBXProject "BoxSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 61D2910A1537782F00D58CED;
+			productRefGroup = 61D291161537782F00D58CED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61D291141537782F00D58CED /* BoxSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61D291131537782F00D58CED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D291241537782F00D58CED /* InfoPlist.strings in Resources */,
+				61D46F65153CF31400A8ED68 /* BoxAddCommentsViewController.xib in Resources */,
+				61D46F6B153CF31400A8ED68 /* BoxCreateFolderViewController.xib in Resources */,
+				61D46F77153CF31400A8ED68 /* BoxRenameFileViewController.xib in Resources */,
+				61D46F81153CF31400A8ED68 /* BoxShareActionInputController.xib in Resources */,
+				61D46F85153CF31400A8ED68 /* BoxShareViewController.xib in Resources */,
+				61D46F89153CF31400A8ED68 /* BoxUploadActionViewController.xib in Resources */,
+				61D46F8D153CF31400A8ED68 /* MainViewController.xib in Resources */,
+				61D46F8F153CF31400A8ED68 /* MainWindow.xib in Resources */,
+				61B13D131546113300CE5ED2 /* TestImage.gif in Resources */,
+				61B13D151546113300CE5ED2 /* TestTextDocument.rtf in Resources */,
+				61B13D171546113300CE5ED2 /* TestWordDocument.docx in Resources */,
+				613CFCEE155870C400687173 /* BoxDownloadViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E15D33C41614E7BD005F207B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\necho \"Copy Box database schema into bundle\"\ncp -fr ./Box.framework/Resources/BoxCoreDataStore.momd \"${BUILT_PRODUCTS_DIR}/${CONTENTS_FOLDER_PATH}/BoxCoreDataStore.momd\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61D291111537782F00D58CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61D291261537782F00D58CED /* main.m in Sources */,
+				61D2912A1537782F00D58CED /* AppDelegate.m in Sources */,
+				61D46F61153CF31400A8ED68 /* BoxActionTableViewController.m in Sources */,
+				61D46F63153CF31400A8ED68 /* BoxAddCommentsViewController.m in Sources */,
+				61D46F67153CF31400A8ED68 /* BoxAddCommentTableViewController.m in Sources */,
+				61D46F69153CF31400A8ED68 /* BoxCreateFolderViewController.m in Sources */,
+				61D46F6D153CF31400A8ED68 /* BoxDeleteActionViewController.m in Sources */,
+				61D46F6F153CF31400A8ED68 /* BoxGetDeleteCommentTableViewController.m in Sources */,
+				61D46F71153CF31400A8ED68 /* BoxGetUpdatesTableViewController.m in Sources */,
+				61D46F75153CF31400A8ED68 /* BoxRenameFileViewController.m in Sources */,
+				61D46F79153CF31400A8ED68 /* BoxSelectToDeleteTableViewController.m in Sources */,
+				61D46F7D153CF31400A8ED68 /* BoxSelectToPubShareViewController.m in Sources */,
+				61D46F7F153CF31400A8ED68 /* BoxSelectToRenameTableViewController.m in Sources */,
+				61D46F83153CF31400A8ED68 /* BoxShareViewController.m in Sources */,
+				61D46F87153CF31400A8ED68 /* BoxUploadActionViewController.m in Sources */,
+				61D46F8B153CF31400A8ED68 /* MainViewController.m in Sources */,
+				61D46F93153CF35200A8ED68 /* BoxBrowserTableViewController.m in Sources */,
+				613CFCE51558707200687173 /* BoxSelectToDownloadViewController.m in Sources */,
+				613CFCEB155870C400687173 /* BoxDownloadViewController.m in Sources */,
+				E146EBF316C474110013D459 /* BoxLoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		61D291221537782F00D58CED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61D291231537782F00D58CED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61D291401537783000D58CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61D291411537783000D58CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61D291431537783000D58CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BoxSDK/BoxSDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = "BoxSDK/BoxSDK-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		61D291441537783000D58CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BoxSDK/BoxSDK-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				INFOPLIST_FILE = "BoxSDK/BoxSDK-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61D2910F1537782F00D58CED /* Build configuration list for PBXProject "BoxSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D291401537783000D58CED /* Debug */,
+				61D291411537783000D58CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61D291421537783000D58CED /* Build configuration list for PBXNativeTarget "BoxSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61D291431537783000D58CED /* Debug */,
+				61D291441537783000D58CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61D2910C1537782F00D58CED /* Project object */;
+}
