@@ -73,6 +73,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)cancelButtonPressed:(id)sender
+{
+    if ([self.loginDelegate respondsToSelector:@selector(boxLoginViewControllerDidCancel:)]) {
+        [self.loginDelegate boxLoginViewControllerDidCancel:self];
+    }
+}
+
 - (void)loadLogin
 {
     [Box initiateWebViewLoginWithCallbacks:^(id<BoxOperationCallbacks> on)

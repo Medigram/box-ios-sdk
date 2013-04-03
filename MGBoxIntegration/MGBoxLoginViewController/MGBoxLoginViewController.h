@@ -16,6 +16,7 @@
 - (void)boxLoginViewControllerDidLogIn:(MGBoxLoginViewController *)loginController;
 
 @optional
+- (void)boxLoginViewControllerDidCancel:(MGBoxLoginViewController *)loginController;
 - (BOOL)boxLoginViewController:(MGBoxLoginViewController *)loginController didFailLoginWithResponse:(BoxCallbackResponse)response;
 
 @end
@@ -24,5 +25,7 @@
 
 @property (nonatomic, strong) IBOutlet UIWebView *webView;
 @property (nonatomic, weak) id <MGBoxLoginViewControllerDelegate> loginDelegate;
+
+- (IBAction)cancelButtonPressed:(id)sender;
 
 @end
