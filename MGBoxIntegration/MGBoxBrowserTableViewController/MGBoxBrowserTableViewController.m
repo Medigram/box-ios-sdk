@@ -31,6 +31,7 @@
         
         self.folderID = folderID;
         self.rootFolder = [Box folderWithID:self.folderID];
+        
     }
     return self;
 }
@@ -57,7 +58,7 @@
 
 - (void)_initialize
 {
-    
+    self.contentSizeForViewInPopover = CGSizeMake(320, 480);
 }
 
 - (void)viewDidLoad
@@ -121,19 +122,21 @@
     cell.detailTextLabel.text = boxObject.subtitle;
     
     if ([boxObject isFolder]) {
-        BoxFolder * folder = (BoxFolder*)boxObject;
-        if(folder.hasCollaborators) {
-            cell.imageView.image = [UIImage imageNamed:@"boxFolderIconShared"];
-        } else {
-            cell.imageView.image = [UIImage imageNamed:@"boxFolderIcon"];
-        }
+        cell.imageView.image = [UIImage imageNamed:@"FileType-Folder"];
         cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     } else {
         cell.imageView.image = [UIImage imageNamed:((BoxFile *)boxObject).fileExtension];
         if (cell.imageView.image == nil) {
-            cell.imageView.image = [UIImage imageNamed:@"generic"];
+            BoxFile *file = (BoxFile *)boxObject;
+            if (file.fileType == BoxFileTypeImage) {
+                cell.imageView.image = [UIImage imageNamed:@"FileType-Photo"];
+            } else {
+                cell.imageView.image = [UIImage imageNamed:@"FileType-Blank"];
+            }
         }
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.accessoryType = UITableViewCellAccessoryNone;
     }
 }
 

@@ -45,6 +45,8 @@
 {
     self.modalPresentationStyle = UIModalPresentationFormSheet;
     self.title = @"Sign in to Box";
+    
+    self.contentSizeForViewInPopover = CGSizeMake(400, 640);
 }
 
 - (void)viewDidLoad
