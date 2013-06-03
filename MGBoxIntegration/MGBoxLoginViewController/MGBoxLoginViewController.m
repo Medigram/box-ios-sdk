@@ -5,7 +5,7 @@
 //  Created by Yuhao Ding on 3/27/13.
 //  Copyright (c) 2013 Medigram, Inc. All rights reserved.
 //
-
+#import "SVProgressHUD.h"
 #import "MGBoxLoginViewController.h"
 #import "MGBoxManager.h"
 
@@ -113,20 +113,18 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-	MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.labelText = @"Loading...";
+    [SVProgressHUD showWithStatus:@"Loading..."];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
 	//
-    [MBProgressHUD hideAllHUDsForView:self.view animated:NO];
+    [SVProgressHUD dismiss];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
-    [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
-}
+    [SVProgressHUD dismiss];}
 
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType

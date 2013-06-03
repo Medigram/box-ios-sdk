@@ -29,7 +29,6 @@
     {
         if ([[[Box user] username] length] > 0)
         {
-           DLog(@"%@ is currently logged in.", [[Box user] username]);
         }
         else
         {
@@ -37,13 +36,11 @@
              {
                  on.before(^
                            {
-                               DLog(@"User with ID %@ is currently logged in.", [[Box user] userID]);
                            });
                  on.after(^(BoxCallbackResponse response)
                           {
                               if (response == BoxCallbackResponseSuccessful)
                               {
-                                  DLog(@"%@ is currently logged in.", [[Box user] username]);
                               }
                           });
              }];
@@ -51,7 +48,6 @@
     }
     else
     {
-        DLog(@"User not logged in.");
     }
 }
 

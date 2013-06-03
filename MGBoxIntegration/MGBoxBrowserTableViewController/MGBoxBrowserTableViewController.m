@@ -7,6 +7,7 @@
 //
 
 #import "MGBoxBrowserTableViewController.h"
+#import "SVProgressHUD.h"
 
 @interface MGBoxBrowserTableViewController ()
 - (void)_initialize;
@@ -163,6 +164,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     BoxObject * boxObject = ((BoxObject*)[self.rootFolder.children objectAtIndex:indexPath.row]);
     if ([boxObject isFolder]) {
         MGBoxBrowserTableViewController * browserTableViewController = [[[self class] alloc] initWithFolderID:boxObject.boxID];
@@ -171,14 +173,16 @@
     } else if ([boxObject isFile]) {
         BoxFile *file = (BoxFile *)boxObject;
         if ([file fileType] == BoxFileTypeImage) {
-            
-            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-            hud.labelText = @"Importing image...";
-            
+            [SVProgressHUD showWithStatus:@"Importing Image..."];
+//            
+//            MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+//            hud.labelText = @"Importing image...";
+//            
             [file previewWithCallbacks:^(id<BoxOperationCallbacks> on) {
                 on.after(^(BoxCallbackResponse response){
                     if (response == BoxCallbackResponseSuccessful) {
-                        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+//                        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+                        [SVProgressHUD dismiss];
                         
                         UIImage *image = [UIImage imageWithData:file.fileData];
                         if ([self.browserDelegate respondsToSelector:@selector(boxBrowserTableViewController:selectedAnImage:)]) {
@@ -186,8 +190,9 @@
                         }
                         
                     } else {
-                        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
+//                        [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
                         [BoxErrorHandler presentErrorAlertViewForResponse:response];
+                        [SVProgressHUD dismiss];
                     }
                 });
             }];
