@@ -69,6 +69,11 @@
     [NSThread detachNewThreadSelector:@selector(loadLogin) toTarget:self withObject:nil];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [SVProgressHUD dismiss];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
